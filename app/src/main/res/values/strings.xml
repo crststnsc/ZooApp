@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">zooApp</string>
+    <string-array name="names">
+        <item name="1">dog</item>
+        <item name="2">cat</item>
+        <item name="3">capybara</item>
+        <item name="4">axolotl</item>
+        <item name="5">bumblebee</item>
+        <item name="6">bullfrog</item>
+        <item name="7">duck</item>
+        <item name="8">fox</item>
+        <item name="9">panda</item>
+        <item name="10">rattlesnake</item>
+
+    </string-array>
+    <string-array name="continents">
+        <item>europe</item>
+        <item>europe</item>
+        <item>americas</item>
+        <item>europe</item>
+        <item>africa</item>
+        <item>africa</item>
+        <item>africa</item>
+        <item>australia</item>
+        <item>asia</item>
+        <item>asia</item>
+
+    </string-array>
+</resources>
