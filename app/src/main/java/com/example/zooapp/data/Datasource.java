@@ -16,14 +16,11 @@ public class Datasource {
         String[] names = context.getResources().getStringArray(R.array.names);
         String[] continents = context.getResources().getStringArray(R.array.continents);
 
-        List<Animal> animalList = new ArrayList<>();
+        List<Animal> animals = new ArrayList<>();
 
-        Log.e("error", String.valueOf(continents.length) + " " + String.valueOf(names.length));
-
-        for (int i = 0; i < names.length; i++){
-            animalList.add(new Animal(names[i], continents[i]));
+        for (int i = 0; i < names.length; i++) {
+            animals.add(new Animal(names[i], continents[i]));
         }
-
-        return animalList;
+        return animals;
     }
 }

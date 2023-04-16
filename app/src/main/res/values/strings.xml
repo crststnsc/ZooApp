@@ -1,17 +1,56 @@
 <resources>
     <string name="app_name">zooApp</string>
     <string-array name="names">
-        <item name="1">dog</item>
-        <item name="2">cat</item>
-        <item name="3">capybara</item>
-        <item name="4">axolotl</item>
-        <item name="5">bumblebee</item>
-        <item name="6">bullfrog</item>
-        <item name="7">duck</item>
-        <item name="8">fox</item>
-        <item name="9">panda</item>
-        <item name="10">rattlesnake</item>
-
+        <item>dog</item>
+        <item>cat</item>
+        <item>capybara</item>
+        <item>axolotl</item>
+        <item>bumblebee</item>
+        <item>elephant</item>
+        <item>tiger</item>
+        <item>giraffe</item>
+        <item>lion</item>
+        <item>cheetah</item>
+        <item>zebra</item>
+        <item>hippopotamus</item>
+        <item>crocodile</item>
+        <item>gazelle</item>
+        <item>rhinoceros</item>
+        <item>baboon</item>
+        <item>monkey</item>
+        <item>gorilla</item>
+        <item>chimpanzee</item>
+        <item>koala</item>
+        <item>kangaroo</item>
+        <item>platypus</item>
+        <item>wombat</item>
+        <item>emu</item>
+        <item>kookaburra</item>
+        <item>parrot</item>
+        <item>cockatoo</item>
+        <item>owl</item>
+        <item>flamingo</item>
+        <item>swan</item>
+        <item>duck</item>
+        <item>goose</item>
+        <item>seagull</item>
+        <item>pelican</item>
+        <item>ostrich</item>
+        <item>albatross</item>
+        <item>seal</item>
+        <item>sea lion</item>
+        <item>walrus</item>
+        <item>whale</item>
+        <item>shark</item>
+        <item>octopus</item>
+        <item>lobster</item>
+        <item>crab</item>
+        <item>starfish</item>
+        <item>clam</item>
+        <item>snail</item>
+        <item>slug</item>
+        <item>ant</item>
+        <item>beetle</item>
     </string-array>
     <string-array name="continents">
         <item>europe</item>
@@ -19,11 +58,50 @@
         <item>americas</item>
         <item>europe</item>
         <item>africa</item>
-        <item>africa</item>
+        <item>asia</item>
+        <item>asia</item>
+        <item>australia</item>
         <item>africa</item>
         <item>australia</item>
+        <item>europe</item>
+        <item>europe</item>
+        <item>americas</item>
+        <item>europe</item>
+        <item>africa</item>
         <item>asia</item>
         <item>asia</item>
-
+        <item>australia</item>
+        <item>africa</item>
+        <item>australia</item>
+        <item>europe</item>
+        <item>europe</item>
+        <item>americas</item>
+        <item>europe</item>
+        <item>africa</item>
+        <item>asia</item>
+        <item>asia</item>
+        <item>australia</item>
+        <item>africa</item>
+        <item>australia</item>
+        <item>europe</item>
+        <item>europe</item>
+        <item>americas</item>
+        <item>europe</item>
+        <item>africa</item>
+        <item>asia</item>
+        <item>asia</item>
+        <item>australia</item>
+        <item>africa</item>
+        <item>australia</item>
+        <item>europe</item>
+        <item>europe</item>
+        <item>americas</item>
+        <item>europe</item>
+        <item>africa</item>
+        <item>asia</item>
+        <item>asia</item>
+        <item>australia</item>
+        <item>africa</item>
+        <item>australia</item>
     </string-array>
 </resources>

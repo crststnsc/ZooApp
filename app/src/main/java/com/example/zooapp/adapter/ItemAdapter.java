@@ -76,6 +76,18 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ItemViewHolder
                 adapterLayout = LayoutInflater.from(parent.getContext())
                         .inflate(R.layout.list_item, parent, false);
                 break;
+            case 2:
+                adapterLayout = LayoutInflater.from(parent.getContext())
+                        .inflate(R.layout.am_layout, parent, false);
+                break;
+            case 3:
+                adapterLayout = LayoutInflater.from(parent.getContext())
+                        .inflate(R.layout.as_layout, parent, false);
+                break;
+            case 4:
+                adapterLayout = LayoutInflater.from(parent.getContext())
+                        .inflate(R.layout.au_layout, parent, false);
+                break;
             default:
                 break;
         }
@@ -86,11 +98,17 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ItemViewHolder
     @Override
     public int getItemViewType(int position) {
 
-        switch (dataset.get(position).getContinent()) {
+        switch (dataset.get(position).continent) {
             case "europe":
                 return 0;
             case "africa":
                 return 1;
+            case "americas":
+                return 2;
+            case "asia":
+                return 3;
+            case "australia":
+                return 4;
             default:
                 return -1;
         }
@@ -99,11 +117,14 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ItemViewHolder
     @Override
     public void onBindViewHolder(ItemViewHolder holder, int position) {
         Animal item = dataset.get(position);
-        Log.e("ERROR", String.valueOf(dataset.size()));
-
-        holder.textView.setText(item.getStringResourceId());
-        holder.continentText.setText(item.continent);
+        if (holder.textView != null) {
+            holder.textView.setText(item.stringResourceId);
+        }
+        if (holder.continentText != null) {
+            holder.continentText.setText(item.continent);
+        }
     }
+
 
     /**
      * Return the size of your dataset (invoked by the layout manager)

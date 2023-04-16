@@ -42,7 +42,7 @@ public class MainFragment extends Fragment implements ItemClickListener {
 
         RecyclerView recyclerView = getView().findViewById(R.id.recycler_view);
         ItemAdapter adapter = new ItemAdapter(this.getActivity(), dataset);
-        adapter.setClickListener((ItemClickListener) this);
+        adapter.setClickListener(this);
         recyclerView.setAdapter(adapter);
         recyclerView.setHasFixedSize(true);
     }
@@ -81,7 +81,6 @@ public class MainFragment extends Fragment implements ItemClickListener {
         args.putString("continent", continent);
         args.putInt("color", color);
         secondFragment.setArguments(args);
-
 
         FragmentTransaction transaction = getParentFragmentManager().beginTransaction();
         transaction.replace(R.id.main_fragment, secondFragment);

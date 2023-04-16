@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:card_view="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/item_title"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/card_view"
@@ -15,30 +14,24 @@
         card_view:cardCornerRadius="10dp"
         card_view:cardUseCompatPadding="true"
         tools:ignore="MissingConstraints"
-        card_view:cardBackgroundColor="@color/Yellow">
+        card_view:cardBackgroundColor="@color/Orange">
 
-        <RelativeLayout
+        <LinearLayout
             android:layout_width="match_parent"
             android:orientation="vertical"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:gravity="center">
             <TextView
                 android:id="@+id/info_text"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:textColor="@color/Black"/>
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="@color/Black"
-                android:layout_centerInParent="true"/>
             <TextView
                 android:id="@+id/continent_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@color/Black"
-                android:layout_alignParentBottom="true"
-                android:layout_alignParentEnd="true" />
-        </RelativeLayout>
+                android:textColor="@color/Black" />
+        </LinearLayout>
 
     </androidx.cardview.widget.CardView>
 
