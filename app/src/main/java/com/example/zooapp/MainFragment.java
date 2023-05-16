@@ -2,10 +2,12 @@ package com.example.zooapp;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.AppCompatButton;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Color;
@@ -17,6 +19,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import com.example.zooapp.adapter.ItemAdapter;
@@ -53,7 +56,7 @@ public class MainFragment extends Fragment implements View.OnClickListener {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        Button addButton = (Button) requireView().findViewById(R.id.addButton);
+        AppCompatButton addButton = (AppCompatButton) requireView().findViewById(R.id.addButton);
         addButton.setOnClickListener(this);
 
         dataset = Datasource.loadAnimals(this.getActivity());
@@ -83,6 +86,7 @@ public class MainFragment extends Fragment implements View.OnClickListener {
 
 
     AlertDialog.Builder builder;
+
     @Override
     public void onClick(View v) {
         String name = ((TextView) getView().findViewById(R.id.nameEdit)).getText().toString();
