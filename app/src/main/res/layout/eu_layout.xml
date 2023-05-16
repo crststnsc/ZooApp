@@ -6,15 +6,13 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/card_view"
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:layout_gravity="center"
         android:layout_margin="5dp"
         card_view:cardCornerRadius="10dp"
         card_view:cardUseCompatPadding="true"
         tools:ignore="MissingConstraints"
-        card_view:cardBackgroundColor="@color/Green">
+        android:background="@drawable/card_gradient">
 
         <LinearLayout
             android:layout_width="match_parent"
